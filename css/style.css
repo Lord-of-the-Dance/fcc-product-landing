@@ -1,0 +1,167 @@
+/* Universal Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Tag Styles */
+
+body {
+  background-color: #eee;
+}
+
+main {
+  width: 70%;
+  max-width: 900px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin: 0px 20px;
+}
+
+/* Class Styles */
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container-row {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid #22C;
+}
+
+.page-button {
+  padding: 15px;
+  border: none;
+  color: #fff;
+  background-color: #22C;
+  border-radius: 7px;
+}
+
+.price {
+  font-weight: 800;
+  font-size: 1.3em;
+}
+
+/* ID Styles */
+
+#email {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+#form {
+  align-items: center;
+  margin: 30px 0px;
+}
+
+#header {
+  padding: 20px 50px;
+  font-size: 1.3em;
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+}
+
+#footer {
+  text-align: center;
+  background-color: #bbb;
+  padding: 30px;
+}
+
+#footer ul {
+  justify-content: center;
+}
+
+#header-img {
+  width: 50px;
+  margin: 0px 10px 0px 20px;
+}
+
+#nav-bar {
+  justify-content: space-between;
+}
+
+#pricing > div {
+  box-shadow: 2px 2px 5px 2px black;
+  margin: 30px 15px 65px 15px;
+  border-radius: 15px;
+}
+
+#pricing > div > div {
+  margin: 20px;
+  align-items: center;
+}
+
+#pricing > div > div * {
+  margin: 10px 0px;
+}
+
+#pricing h4 {
+  background-color: #bbb;
+  align-self: stretch;
+  padding: 30px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  text-align: center;
+}
+
+#product-info div div {
+  margin: 45px 0px 45px 15px;
+}
+
+#product-info img {
+  width: 125px;
+  height: 125px;
+  background-color: #FA4;
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 30%;
+}
+
+#video {
+  display: block;
+  width: 600px;
+  height: 350px;
+  margin: 40px auto;
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px) {
+  #header {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  #pricing {
+    flex-direction: column;
+  }
+
+  #pricing > div {
+    margin: 20px 0px 30px 0px;
+  }
+
+  #video {
+    width: 100%;
+  }
+}
